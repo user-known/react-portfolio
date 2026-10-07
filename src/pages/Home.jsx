@@ -43,13 +43,13 @@ export default function Home() {
             <span className="chip"><b>Vignesh Balakumar</b> &nbsp;&bull;&nbsp; India</span>
             <h1>
               <Line delay="0.15s">Hi, I'm Vignesh!</Line>
-              <Line delay="0.3s">I'm a <Highlight>visual &amp; brand designer</Highlight></Line>
+              <Line delay="0.3s">I'm a <Highlight>product designer</Highlight></Line>
             </h1>
-            <p className="lede">I craft brands and visuals that are clear, consistent and built to last.</p>
+            <p className="lede">I design products, brands, and the systems that hold them together.</p>
             <div className="path" aria-label="Career path">
               <span>Cartrabbit</span><span className="arrow">&rarr;</span>
               <span>Acme Interiors</span><span className="arrow">&rarr;</span>
-              <span className="status"><span className="dot" />BrandIT Studio</span>
+              <span className="status"><span className="dot" />Exploring New Opportunities</span>
             </div>
             <div className="btn-row"><SocialButtons /></div>
           </div>
@@ -81,13 +81,13 @@ export default function Home() {
                 <h2>About</h2>
                 <dl className="facts">
                   <div><dt>Based in</dt><dd>India</dd></div>
-                  <div><dt>Focus</dt><dd>Brand identity, web design</dd></div>
-                  <div><dt>Disciplines</dt><dd>Branding, UI/UX, motion</dd></div>
+                  <div><dt>Focus</dt><dd>UI/UX, Web, Design Systems</dd></div>
+                  <div><dt>Disciplines</dt><dd>UI/UX, Product Design, Web, Design Systems, Branding</dd></div>
                 </dl>
               </Reveal>
               <div>
                 <Reveal as="h3" delay="0.08s">
-                  I came to brand design through engineering and <Highlight>web development</Highlight>
+                  I turn ideas into <Highlight>purposeful digital and visual experiences</Highlight>
                 </Reveal>
                 <ul className="bullets">
                   {bullets.map((b, i) => (

@@ -10,9 +10,6 @@ export default function SocialButtons({ emailLabel }) {
       <a className="pill" href={LINKS.linkedin}>
         <Icon name="in" />LinkedIn
       </a>
-      <a className="pill" href={LINKS.behance}>
-        <Icon name="link" />Behance
-      </a>
     </>
   );
 }

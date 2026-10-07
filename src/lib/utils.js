@@ -58,5 +58,5 @@ export function coverBg(p, i = 0) {
 
 export const metaLine = (p) => [p.client, p.industry, p.year].filter(Boolean).join(" \u2022 ");
 
-export const EMAIL = "hello@yourdomain.com"; // replace with your email
-export const LINKS = { linkedin: "#", behance: "#" }; // replace with your profile links
+export const EMAIL = "vigneshbalakumar11@gmail.com"; // replace with your email
+export const LINKS = { linkedin: "https://www.linkedin.com/in/vignesh-balakumar-b0b300211/"}; // replace with your profile links
