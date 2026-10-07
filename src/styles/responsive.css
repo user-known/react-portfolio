@@ -1,0 +1,20 @@
+/* Shared responsive rules (loaded last) */
+@media (max-width: 900px) {
+  .doc { grid-template-columns: 1fr; margin-top: 56px; }
+  .rail { display: none; }
+  .facts-bar { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 820px) {
+  .hero { padding-top: 120px; }
+  .hero > .wrap { grid-template-columns: 1fr; }
+  .stack { justify-self: start; margin-bottom: 56px; }
+  .case, .next { grid-template-columns: 1fr; gap: 18px; }
+  .work-list { padding-inline: 0; gap: 48px; }
+  .about { grid-template-columns: 1fr; gap: 24px; }
+  .facts { max-width: 320px; }
+  .link.opt { display: none; }
+  .grid2, .grid3, .outcomes { grid-template-columns: 1fr; }
+  .stat { grid-template-columns: 96px 1fr; }
+  .stat b { font-size: 2.4rem; }
+}
+@media (max-width: 480px) { .link { padding: 7px 10px; } }

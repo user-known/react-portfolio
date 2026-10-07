@@ -1,0 +1,28 @@
+/* Nav */
+.nav {
+  position: fixed; top: 16px; left: 0; right: 0; margin-inline: auto; width: var(--nav-w, max-content); max-width: calc(100% - 24px); z-index: 50;
+  display: flex; align-items: center; gap: 4px; padding: 6px; border-bottom: 1px solid transparent;
+  background: color-mix(in srgb, var(--card) 78%, transparent);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  border-radius: 24px; box-shadow: var(--shadow);
+  animation: navIn .8s var(--ease) both;
+  transition: width .55s cubic-bezier(.65,0,.25,1), max-width .55s cubic-bezier(.65,0,.25,1), top .55s cubic-bezier(.65,0,.25,1), padding .55s cubic-bezier(.65,0,.25,1), border-radius .55s cubic-bezier(.65,0,.25,1), background .4s, border-color .4s, box-shadow .4s;
+}
+.nav.scrolled { box-shadow: 0 1px 2px rgba(20,20,18,.06), 0 12px 32px rgba(20,20,18,.12); }
+/* Full-width bar once the page is scrolled */
+.nav.full { top: 0; width: 100%; max-width: 100%; padding: 10px max(16px, calc((100% - var(--wrap)) / 2)); border-radius: 0; border-bottom-color: var(--line); box-shadow: none; background: color-mix(in srgb, var(--bg) 82%, transparent); }
+@keyframes navIn { from { opacity: 0; transform: translateY(-26px); } to { opacity: 1; transform: none; } }
+.nav .avatar { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: linear-gradient(135deg,#F2C879,#C9733A); color: #fff; font-weight: 600; font-size: 14px; margin-right: 4px; transition: transform .35s cubic-bezier(.34,1.56,.64,1); }
+.nav .avatar:hover { transform: rotate(-12deg) scale(1.08); }
+.links { position: relative; display: flex; margin-inline: auto; }
+.indicator { position: absolute; top: 0; bottom: 0; left: 0; width: 0; border-radius: 999px; background: var(--chip); opacity: 0; pointer-events: none; transition: transform .4s cubic-bezier(.3,.9,.3,1), width .4s cubic-bezier(.3,.9,.3,1), opacity .2s; }
+.link { position: relative; z-index: 1; padding: 7px 14px; font-size: 13px; color: var(--muted); border-radius: 999px; transition: color .2s; }
+.link:hover, .link.active { color: var(--ink); }
+.pill-dark { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: var(--btn); color: var(--btn-ink); font-size: 13px; font-weight: 600; transition: transform .2s; }
+.pill-dark:hover { transform: scale(1.04); }
+.pill-dark:active { transform: scale(.97); }
+.icon-btn { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--chip); font-size: 16px; margin-left: 4px; transition: transform .4s cubic-bezier(.34,1.56,.64,1); }
+.icon-btn:hover { transform: rotate(25deg); }
+
+/* Progress bar (case study) */
+.progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 60; background: var(--dot); transform-origin: left; transform: scaleX(0); }

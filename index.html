@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Vignesh Balakumar · Visual &amp; Brand Designer</title>
+    <meta name="description" content="Visual and brand designer in India. Brand identity, web design and campaign work." />
+    <meta name="theme-color" content="#FBFBF9" />
+    <script>
+      // Runs before first paint: enables the reveal animations and applies the saved theme (no flash).
+      (function () {
+        var root = document.documentElement;
+        root.classList.add("js");
+        var t = null;
+        try { t = localStorage.getItem("theme"); } catch (e) {}
+        if (!t) t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        root.setAttribute("data-theme", t);
+      })();
+    </script>
+    <!-- General Sans (Fontshare). DM Sans is the fallback. Check the Fontshare license for your use. -->
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

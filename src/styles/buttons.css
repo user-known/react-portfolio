@@ -1,0 +1,11 @@
+/* Buttons, chips and the status dot (shared) */
+.chip { display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px; border-radius: 999px; background: var(--chip); font-size: 12px; color: var(--muted); }
+.chip b { font-weight: 500; color: var(--ink); }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--dot); flex: none; position: relative; }
+.dot::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--dot); animation: ping 2.4s ease-out infinite; }
+@keyframes ping { 0% { transform: scale(1); opacity: .6; } 70%,100% { transform: scale(3.2); opacity: 0; } }
+.btn-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 12px; background: var(--chip); font-size: 13px; font-weight: 600; transition: transform .2s var(--ease), background .2s; }
+.pill:hover { transform: translateY(-2px); }
+.pill:active { transform: scale(.96); }
+.pill.dark { background: var(--btn); color: var(--btn-ink); }

@@ -1,0 +1,341 @@
+{
+  "categories": [
+    {
+      "id": "brand",
+      "label": "Brand identity"
+    },
+    {
+      "id": "web",
+      "label": "Web"
+    },
+    {
+      "id": "campaign",
+      "label": "Campaign"
+    }
+  ],
+  "projects": [
+    {
+      "id": "acme-interiors",
+      "client": "Acme Interiors",
+      "title": "Rebranding an interiors studio from logo to launch",
+      "industry": "Interiors",
+      "year": "2026",
+      "metricBold": "Full identity system",
+      "metricText": "logo, website visuals and campaign creatives",
+      "summary": "Creative lead on the rebrand, from the first logo sketches to the website and social rollout.",
+      "tags": [
+        "Brand identity",
+        "Logo design",
+        "Web visuals"
+      ],
+      "cats": [
+        "brand",
+        "web",
+        "campaign"
+      ],
+      "colors": {
+        "a": "#E9C46A",
+        "b": "#8A4B25",
+        "base": "#1E1A14"
+      },
+      "image": "",
+      "url": "",
+      "featured": true,
+      "case": {
+        "enabled": true,
+        "role": "Creative & Graphic Designer",
+        "sub": "I led the Acme Interiors rebrand end to end, from the first logo sketches to website visuals and social campaigns.",
+        "badge": "",
+        "liveLabel": "",
+        "liveUrl": "",
+        "quote": {
+          "text": "",
+          "by": ""
+        },
+        "gallery": [],
+        "brief": {
+          "lead": "The brief: rebuild the Acme Interiors identity and carry it across web and social.",
+          "text": ""
+        },
+        "process": {
+          "intro": "The rebrand moved through four phases. Each one narrowed the work from open questions to finished assets.",
+          "phases": [
+            "Discover",
+            "Define",
+            "Develop",
+            "Deliver"
+          ],
+          "caption": "The Double Diamond: diverge and converge on the problem, then on the solution."
+        },
+        "challenge": {
+          "text": "How can Acme Interiors present one consistent identity across its logo, website and social channels, so every touchpoint feels like the same studio?",
+          "image": "",
+          "caption": ""
+        },
+        "stats": [],
+        "questions": [
+          "Who is the brand speaking to, and what do they expect from an interiors studio?",
+          "Where does the current identity break down across web, print and social?",
+          "What should stay, and what should change?"
+        ],
+        "insights": [],
+        "identity": {
+          "text": "",
+          "image": "",
+          "caption": ""
+        },
+        "identityExtras": [],
+        "website": {
+          "intro": ""
+        },
+        "slides": [],
+        "campaign": {
+          "intro": "",
+          "caption": ""
+        },
+        "posts": [],
+        "outcomes": [
+          {
+            "icon": "check",
+            "title": "Delivered end to end",
+            "text": "I owned the rebrand from logo and identity to website visuals and campaign creatives."
+          }
+        ],
+        "closing": {
+          "text": "",
+          "ctaLabel": "",
+          "ctaUrl": ""
+        }
+      }
+    },
+    {
+      "id": "braapstop-motorsport",
+      "client": "Braapstop Motorsport",
+      "title": "Add your one-line project title here",
+      "industry": "Motorsport",
+      "year": "",
+      "metricBold": "",
+      "metricText": "",
+      "summary": "Add one sentence on your role and what you delivered.",
+      "tags": [
+        "Brand identity",
+        "Visual design"
+      ],
+      "cats": [
+        "brand"
+      ],
+      "colors": {
+        "a": "#E5383B",
+        "b": "#4A1517",
+        "base": "#0F0F10"
+      },
+      "image": "",
+      "url": "",
+      "featured": true,
+      "case": {
+        "enabled": false,
+        "role": "",
+        "sub": "",
+        "badge": "",
+        "liveLabel": "",
+        "liveUrl": "",
+        "quote": {
+          "text": "",
+          "by": ""
+        },
+        "gallery": [],
+        "brief": {
+          "lead": "",
+          "text": ""
+        },
+        "process": {
+          "intro": "",
+          "phases": [],
+          "caption": ""
+        },
+        "challenge": {
+          "text": "",
+          "image": "",
+          "caption": ""
+        },
+        "stats": [],
+        "questions": [],
+        "insights": [],
+        "identity": {
+          "text": "",
+          "image": "",
+          "caption": ""
+        },
+        "identityExtras": [],
+        "website": {
+          "intro": ""
+        },
+        "slides": [],
+        "campaign": {
+          "intro": "",
+          "caption": ""
+        },
+        "posts": [],
+        "outcomes": [],
+        "closing": {
+          "text": "",
+          "ctaLabel": "",
+          "ctaUrl": ""
+        }
+      }
+    },
+    {
+      "id": "as-we-go",
+      "client": "AS WE GO",
+      "title": "Add your one-line project title here",
+      "industry": "",
+      "year": "",
+      "metricBold": "",
+      "metricText": "",
+      "summary": "Add one sentence on your role and what you delivered.",
+      "tags": [
+        "Branding",
+        "Campaign"
+      ],
+      "cats": [
+        "brand",
+        "campaign"
+      ],
+      "colors": {
+        "a": "#2EC4B6",
+        "b": "#1B3A6B",
+        "base": "#0E2233"
+      },
+      "image": "",
+      "url": "",
+      "featured": true,
+      "case": {
+        "enabled": false,
+        "role": "",
+        "sub": "",
+        "badge": "",
+        "liveLabel": "",
+        "liveUrl": "",
+        "quote": {
+          "text": "",
+          "by": ""
+        },
+        "gallery": [],
+        "brief": {
+          "lead": "",
+          "text": ""
+        },
+        "process": {
+          "intro": "",
+          "phases": [],
+          "caption": ""
+        },
+        "challenge": {
+          "text": "",
+          "image": "",
+          "caption": ""
+        },
+        "stats": [],
+        "questions": [],
+        "insights": [],
+        "identity": {
+          "text": "",
+          "image": "",
+          "caption": ""
+        },
+        "identityExtras": [],
+        "website": {
+          "intro": ""
+        },
+        "slides": [],
+        "campaign": {
+          "intro": "",
+          "caption": ""
+        },
+        "posts": [],
+        "outcomes": [],
+        "closing": {
+          "text": "",
+          "ctaLabel": "",
+          "ctaUrl": ""
+        }
+      }
+    },
+    {
+      "id": "the-adventure-kid",
+      "client": "The Adventure Kid",
+      "title": "Add your one-line project title here",
+      "industry": "",
+      "year": "",
+      "metricBold": "",
+      "metricText": "",
+      "summary": "Add one sentence on your role and what you delivered.",
+      "tags": [
+        "Branding",
+        "Visual design"
+      ],
+      "cats": [
+        "brand"
+      ],
+      "colors": {
+        "a": "#F4A261",
+        "b": "#2D6A4F",
+        "base": "#17301F"
+      },
+      "image": "",
+      "url": "",
+      "featured": true,
+      "case": {
+        "enabled": false,
+        "role": "",
+        "sub": "",
+        "badge": "",
+        "liveLabel": "",
+        "liveUrl": "",
+        "quote": {
+          "text": "",
+          "by": ""
+        },
+        "gallery": [],
+        "brief": {
+          "lead": "",
+          "text": ""
+        },
+        "process": {
+          "intro": "",
+          "phases": [],
+          "caption": ""
+        },
+        "challenge": {
+          "text": "",
+          "image": "",
+          "caption": ""
+        },
+        "stats": [],
+        "questions": [],
+        "insights": [],
+        "identity": {
+          "text": "",
+          "image": "",
+          "caption": ""
+        },
+        "identityExtras": [],
+        "website": {
+          "intro": ""
+        },
+        "slides": [],
+        "campaign": {
+          "intro": "",
+          "caption": ""
+        },
+        "posts": [],
+        "outcomes": [],
+        "closing": {
+          "text": "",
+          "ctaLabel": "",
+          "ctaUrl": ""
+        }
+      }
+    }
+  ]
+}

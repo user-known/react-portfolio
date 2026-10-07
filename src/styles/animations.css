@@ -1,0 +1,24 @@
+/* Theme switch circle reveal (only while toggling) */
+html.theming::view-transition-old(root), html.theming::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+
+/* Highlight chip that draws in */
+.hl { background: var(--chip); border-radius: .22em; padding: 0 .22em; margin-inline: -.04em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.js .hl { background: linear-gradient(var(--chip), var(--chip)) no-repeat 0 50% / 0% 100%; }
+.js .hl.in { background-size: 100% 100%; transition: background-size .8s cubic-bezier(.65,0,.35,1) .25s; }
+.hero .hl.in { transition-delay: .95s; }
+
+/* Reveal on scroll */
+.js [data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity .8s var(--ease) var(--d,0s), transform .8s var(--ease) var(--d,0s); }
+.js [data-reveal].in { opacity: 1; transform: none; }
+.js .tool[data-reveal] { transform: translateY(14px) scale(.85); transition-timing-function: cubic-bezier(.34,1.56,.64,1); }
+.js .cover[data-reveal] { opacity: 1; transform: none; clip-path: inset(0 0 100% 0 round 14px); transition: clip-path 1.05s cubic-bezier(.7,0,.2,1) var(--d,0s); }
+.js .cover[data-reveal].in { clip-path: inset(0 0 0 0 round 14px); }
+
+
+/* Entrance used by page headers */
+.hero-in { animation: rise .7s var(--ease) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  *,*::before,*::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .js [data-reveal], .js .cover[data-reveal] { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+}

@@ -1,0 +1,19 @@
+/* Design tokens: colours, type and spacing variables. Dark theme overrides live here too. */
+:root {
+  --bg: #FBFBF9; --ink: #1B1B19; --muted: #6F6E6A; --faint: #9A9992;
+  --chip: #F0EFEA; --card: #FFFFFF; --line: #ECEBE6;
+  --btn: #1C1B19; --btn-ink: #FFFFFF;
+  --grid: rgba(27,27,25,.05); --glow: rgba(59,167,245,.55);
+  --shadow: 0 1px 2px rgba(20,20,18,.04), 0 8px 24px rgba(20,20,18,.06);
+  --dot: #3BA7F5;
+  --ease: cubic-bezier(.2,.7,.2,1);
+  --font: "General Sans","DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --wrap: 1000px;
+}
+:root[data-theme="dark"] {
+  --bg: #121211; --ink: #F2F1ED; --muted: #A09F98; --faint: #77766F;
+  --chip: #242422; --card: #1A1A18; --line: #2A2A27;
+  --btn: #F2F1ED; --btn-ink: #121211;
+  --grid: rgba(255,255,255,.05); --glow: rgba(120,190,255,.5);
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}

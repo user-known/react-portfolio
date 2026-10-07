@@ -1,0 +1,22 @@
+/* Hero stacked carousel */
+.stack { position: relative; width: 100%; max-width: 380px; justify-self: end; margin-bottom: 18px; animation: stackIn 1s .55s var(--ease) both; }
+@keyframes stackIn { from { opacity: 0; transform: translateX(40px) rotate(2deg); } to { opacity: 1; transform: none; } }
+.stack::before, .stack::after { content: ""; position: absolute; height: 100%; border-radius: 18px; background: var(--card); box-shadow: var(--shadow); z-index: 0; transition: transform .45s var(--ease), opacity .3s; }
+.stack::before { left: 14px; right: 14px; top: 8px; opacity: .7; }
+.stack::after { left: 26px; right: 26px; top: 15px; opacity: .45; }
+.stack:hover::before { transform: translateY(4px); }
+.stack:hover::after { transform: translateY(9px); }
+.stack-card { position: relative; z-index: 1; display: flex; align-items: center; gap: 14px; padding: 12px 14px 12px 12px; border-radius: 18px; background: var(--card); box-shadow: var(--shadow); transition: opacity .2s, transform .2s; }
+.stack-card.swap { opacity: 0; transform: translateY(8px); }
+.stack-ico { width: 56px; height: 56px; border-radius: 14px; flex: none; display: grid; place-items: center; color: #fff; font-weight: 600; font-size: 20px; }
+.stack-txt { min-width: 0; flex: 1; }
+.stack-meta { font-size: 11px; color: var(--faint); }
+.stack-title { font-size: 14px; font-weight: 500; line-height: 1.3; }
+.stack-next { width: 30px; height: 30px; border-radius: 50%; background: var(--chip); display: grid; place-items: center; flex: none; transition: transform .25s; }
+.stack-next:hover { transform: translateX(3px); }
+.dots { position: absolute; top: calc(100% + 28px); left: 50%; transform: translateX(-50%); display: flex; gap: 6px; padding: 6px 10px; border-radius: 999px; background: var(--chip); }
+.dots button { position: relative; width: 6px; height: 6px; padding: 0; border-radius: 99px; background: var(--faint); opacity: .6; overflow: hidden; transition: width .35s var(--ease), opacity .3s; }
+.dots button[aria-current="true"] { width: 24px; opacity: 1; background: color-mix(in srgb, var(--faint) 45%, transparent); }
+.dots .fill { position: absolute; inset: 0; background: var(--ink); transform-origin: left; transform: scaleX(0); animation: fill 4.5s linear forwards; }
+.stack:hover .dots .fill { animation-play-state: paused; }
+@keyframes fill { to { transform: scaleX(1); } }

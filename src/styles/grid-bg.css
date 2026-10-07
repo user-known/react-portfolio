@@ -1,0 +1,15 @@
+/* Grid texture with cursor glow */
+.grid-bg {
+  position: absolute; left: 0; right: 0; top: 0; height: 560px; z-index: -1; pointer-events: none;
+  background-color: var(--grid);
+  background-image: radial-gradient(circle 150px at var(--mx,50%) var(--my,-400px), var(--glow), transparent);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Crect x='3' y='3' width='38' height='38' rx='7' fill='black'/%3E%3C/svg%3E"), linear-gradient(#000 0%, transparent 100%);
+  -webkit-mask-size: 44px 44px, 100% 100%; -webkit-mask-repeat: repeat, no-repeat; -webkit-mask-composite: source-in;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Crect x='3' y='3' width='38' height='38' rx='7' fill='black'/%3E%3C/svg%3E"), linear-gradient(#000 0%, transparent 100%);
+  mask-size: 44px 44px, 100% 100%; mask-repeat: repeat, no-repeat; mask-composite: intersect;
+}
+.grid-bg.bottom {
+  top: auto; bottom: 0; height: 320px;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Crect x='3' y='3' width='38' height='38' rx='7' fill='black'/%3E%3C/svg%3E"), linear-gradient(transparent 0%, #000 100%);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Crect x='3' y='3' width='38' height='38' rx='7' fill='black'/%3E%3C/svg%3E"), linear-gradient(transparent 0%, #000 100%);
+}
