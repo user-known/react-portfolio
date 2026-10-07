@@ -17,6 +17,15 @@ describe("Home", () => {
     expect(more.getAttribute("href")).toBe("/projects");
   });
 
+  it("shows the current tools", () => {
+    renderAt("/");
+    ["Figma", "Photoshop", "Lightroom", "Affinity", "After Effects", "DaVinci Resolve", "Premiere Pro", "CapCut", "WordPress", "Elementor", "Framer", "Webflow", "HTML, CSS, JS", "Blender", "Unity"].forEach((tool) => {
+      expect(screen.getByText(tool)).toBeTruthy();
+    });
+    expect(screen.queryByText("Illustrator")).toBeNull();
+    expect(screen.queryByText("Claude")).toBeNull();
+  });
+
   it("only links projects that have a case study page", () => {
     renderAt("/");
     const withCase = data.projects.filter((p) => p.case && p.case.enabled);
