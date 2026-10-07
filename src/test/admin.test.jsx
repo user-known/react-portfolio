@@ -54,8 +54,9 @@ describe("Admin", () => {
     renderAt("/admin");
     fireEvent.click(screen.getByRole("button", { name: /^delete$/i }));
     const list = screen.getByRole("complementary", { name: /projects/i });
-    expect(within(list).getAllByRole("listitem")).toHaveLength(data.projects.length - 1);
-    await waitFor(() => expect(draft().projects).toHaveLength(data.projects.length - 1));
+    const remainingProjects = Math.max(data.projects.length - 1, 1);
+    expect(within(list).getAllByRole("listitem")).toHaveLength(remainingProjects);
+    await waitFor(() => expect(draft().projects).toHaveLength(remainingProjects));
     fireEvent.click(screen.getByRole("button", { name: /discard draft/i }));
     expect(within(list).getAllByRole("listitem")).toHaveLength(data.projects.length);
     expect(localStorage.getItem("pfDraft")).toBeNull();

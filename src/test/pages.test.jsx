@@ -4,6 +4,7 @@ import data from "../data/projects.json";
 import { renderAt } from "./helpers";
 
 const featured = data.projects.filter((p) => p.featured);
+const projectCount = (count) => `${count} ${count === 1 ? "project" : "projects"}`;
 
 describe("Home", () => {
   it("shows the featured projects and a link to all projects", () => {
@@ -43,10 +44,10 @@ describe("Home", () => {
 describe("Projects", () => {
   it("lists every project and filters by category", async () => {
     renderAt("/projects");
-    expect(screen.getByText(`${data.projects.length} projects`)).toBeTruthy();
+    expect(screen.getByText(projectCount(data.projects.length))).toBeTruthy();
     const campaigns = data.projects.filter((p) => (p.cats || []).includes("campaign"));
     fireEvent.click(screen.getByRole("button", { name: "Campaign" }));
-    expect(screen.getByText(`${campaigns.length} projects`)).toBeTruthy();
+    expect(screen.getByText(projectCount(campaigns.length))).toBeTruthy();
     // cards that no longer match are removed after their fade-out
     await waitFor(() => expect(document.querySelectorAll(".proj")).toHaveLength(campaigns.length), { timeout: 1500 });
     fireEvent.click(screen.getByRole("button", { name: "All" }));
